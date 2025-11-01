@@ -1,7 +1,7 @@
 services:
   - type: web
     name: gerador-ebook-1-clique
-    env: python
+    env: python3
     region: oregon
     plan: free
     rootDir: app/servidor_local
