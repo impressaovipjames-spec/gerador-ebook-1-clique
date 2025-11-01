@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: gerador-ebook-1-clique
+    env: python
+    region: oregon
+    plan: free
+    rootDir: app/servidor_local
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn server_production:app
